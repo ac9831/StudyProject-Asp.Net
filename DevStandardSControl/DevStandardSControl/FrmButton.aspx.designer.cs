@@ -7,10 +7,10 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace DevAspNet {
+namespace DevStandardSControl {
     
     
-    public partial class FrmRequestUserHostAddress {
+    public partial class FrmButton {
         
         /// <summary>
         /// form1 컨트롤입니다.
@@ -22,30 +22,30 @@ namespace DevAspNet {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label1 컨트롤입니다.
+        /// txtNum 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox txtNum;
         
         /// <summary>
-        /// Label2 컨트롤입니다.
+        /// btnUp 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Button btnUp;
         
         /// <summary>
-        /// Label3 컨트롤입니다.
+        /// btnDown 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Button btnDown;
     }
 }

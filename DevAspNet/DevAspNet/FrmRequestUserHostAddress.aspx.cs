@@ -11,7 +11,9 @@ namespace DevAspNet
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.Label1.Text = Request.UserHostAddress;
+            this.Label2.Text = Request.ServerVariables["REMOTE_HOST"];
+            this.Label3.Text = Request.ServerVariables["REMOTE_ADDR"];
         }
     }
 }
