@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{954B4C7B-B3B3-44B5-B335-B03516026249}</ProjectGuid>
+    <ProjectGuid>{1A0C816D-BED7-44E9-8F3F-0AE275294548}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DevDapper</RootNamespace>
-    <AssemblyName>DevDapper</AssemblyName>
+    <RootNamespace>DevDataControl</RootNamespace>
+    <AssemblyName>DevDataControl</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -43,9 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -104,64 +101,82 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\DevDapper.mdf" />
-    <Content Include="App_Data\DevDapper_log.ldf">
-      <DependentUpon>DevDapper.mdf</DependentUpon>
-    </Content>
-    <Content Include="FrmMaximDelete.aspx" />
-    <Content Include="FrmMaximList.aspx" />
-    <Content Include="FrmMaximModify.aspx" />
-    <Content Include="FrmMaximView.aspx" />
-    <Content Include="FrmMaximWrite.aspx" />
+    <Content Include="FrmGridView.aspx" />
+    <Content Include="FrmDataList.aspx" />
+    <Content Include="FrmDetailsView.aspx" />
+    <Content Include="FrmFormView.aspx" />
+    <Content Include="FrmObjectDataSource.aspx" />
+    <Content Include="FrmRepeaer.aspx" />
+    <Content Include="FrmSqlDataSource.aspx" />
+    <Content Include="FrmXmlDataSource.aspx" />
+    <Content Include="FrmXmlDataSource.xml" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="FrmMaximDelete.aspx.cs">
-      <DependentUpon>FrmMaximDelete.aspx</DependentUpon>
+    <Compile Include="FrmGridView.aspx.cs">
+      <DependentUpon>FrmGridView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmMaximDelete.aspx.designer.cs">
-      <DependentUpon>FrmMaximDelete.aspx</DependentUpon>
+    <Compile Include="FrmGridView.aspx.designer.cs">
+      <DependentUpon>FrmGridView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmMaximList.aspx.cs">
-      <DependentUpon>FrmMaximList.aspx</DependentUpon>
+    <Compile Include="FrmDataList.aspx.cs">
+      <DependentUpon>FrmDataList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmMaximList.aspx.designer.cs">
-      <DependentUpon>FrmMaximList.aspx</DependentUpon>
+    <Compile Include="FrmDataList.aspx.designer.cs">
+      <DependentUpon>FrmDataList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmMaximModify.aspx.cs">
-      <DependentUpon>FrmMaximModify.aspx</DependentUpon>
+    <Compile Include="FrmDetailsView.aspx.cs">
+      <DependentUpon>FrmDetailsView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmMaximModify.aspx.designer.cs">
-      <DependentUpon>FrmMaximModify.aspx</DependentUpon>
+    <Compile Include="FrmDetailsView.aspx.designer.cs">
+      <DependentUpon>FrmDetailsView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmMaximView.aspx.cs">
-      <DependentUpon>FrmMaximView.aspx</DependentUpon>
+    <Compile Include="FrmFormView.aspx.cs">
+      <DependentUpon>FrmFormView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmMaximView.aspx.designer.cs">
-      <DependentUpon>FrmMaximView.aspx</DependentUpon>
+    <Compile Include="FrmFormView.aspx.designer.cs">
+      <DependentUpon>FrmFormView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmMaximWrite.aspx.cs">
-      <DependentUpon>FrmMaximWrite.aspx</DependentUpon>
+    <Compile Include="FrmObjectDataSource.aspx.cs">
+      <DependentUpon>FrmObjectDataSource.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrmMaximWrite.aspx.designer.cs">
-      <DependentUpon>FrmMaximWrite.aspx</DependentUpon>
+    <Compile Include="FrmObjectDataSource.aspx.designer.cs">
+      <DependentUpon>FrmObjectDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmObjectDataSourceClass.cs" />
+    <Compile Include="FrmRepeaer.aspx.cs">
+      <DependentUpon>FrmRepeaer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmRepeaer.aspx.designer.cs">
+      <DependentUpon>FrmRepeaer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSqlDataSource.aspx.cs">
+      <DependentUpon>FrmSqlDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmSqlDataSource.aspx.designer.cs">
+      <DependentUpon>FrmSqlDataSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXmlDataSource.aspx.cs">
+      <DependentUpon>FrmXmlDataSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmXmlDataSource.aspx.designer.cs">
+      <DependentUpon>FrmXmlDataSource.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Maxim.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\MaximServiceRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -174,7 +189,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -189,9 +206,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>65346</DevelopmentServerPort>
+          <DevelopmentServerPort>51341</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:65346/</IISUrl>
+          <IISUrl>http://localhost:51341/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
