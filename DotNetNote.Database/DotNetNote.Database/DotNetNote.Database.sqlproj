@@ -62,6 +62,8 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="dbo\Tables\DotNetNote" />
+    <Folder Include="dbo\Stored Procedures\DotNetNote" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Memos.sql" />
@@ -73,6 +75,17 @@
     <Build Include="dbo\Stored Procedures\SearchMemo.sql" />
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Stored Procedures\Users_Procedures.sql" />
+    <Build Include="dbo\Tables\DotNetNote\Notes.sql" />
+    <Build Include="dbo\Tables\DotNetNote\NoteCOmments.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_WriteNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ListNotes.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ViewNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ReplyNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_GetContNotes.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_SearchNoteCount.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_DeleteNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ModifyNote.sql" />
+    <Build Include="dbo\Stored Procedures\DotNetNote\SearchNotes.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DotNetNote.Database.LocalDB.publish.publish.xml" />
