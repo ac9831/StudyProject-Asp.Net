@@ -76,7 +76,7 @@
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Stored Procedures\Users_Procedures.sql" />
     <Build Include="dbo\Tables\DotNetNote\Notes.sql" />
-    <Build Include="dbo\Tables\DotNetNote\NoteCOmments.sql" />
+    <Build Include="dbo\Tables\DotNetNote\NoteComments.sql" />
     <Build Include="dbo\Stored Procedures\DotNetNote\DNN_WriteNote.sql" />
     <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ListNotes.sql" />
     <Build Include="dbo\Stored Procedures\DotNetNote\DNN_ViewNote.sql" />

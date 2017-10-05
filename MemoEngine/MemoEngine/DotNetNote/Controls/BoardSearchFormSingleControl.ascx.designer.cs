@@ -7,54 +7,54 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace MemoEngine.DotNetNote {
+namespace MemoEngine.DotNetNote.Controls {
     
     
-    public partial class BoardDelete {
+    public partial class BoardSearchFormSingleControl {
         
         /// <summary>
-        /// lblId 컨트롤입니다.
+        /// searchField 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblId;
+        protected global::System.Web.UI.WebControls.DropDownList searchField;
         
         /// <summary>
-        /// txtPassword 컨트롤입니다.
+        /// SearchQuery 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox SearchQuery;
         
         /// <summary>
-        /// btnDelete 컨트롤입니다.
+        /// valSearchQuery 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDelete;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator valSearchQuery;
         
         /// <summary>
-        /// lnkCancel 컨트롤입니다.
+        /// valSummary 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink lnkCancel;
+        protected global::System.Web.UI.WebControls.ValidationSummary valSummary;
         
         /// <summary>
-        /// lblMessage 컨트롤입니다.
+        /// btnSearch 컨트롤입니다.
         /// </summary>
         /// <remarks>
         /// 자동 생성 필드입니다.
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
+        protected global::System.Web.UI.WebControls.Button btnSearch;
     }
 }

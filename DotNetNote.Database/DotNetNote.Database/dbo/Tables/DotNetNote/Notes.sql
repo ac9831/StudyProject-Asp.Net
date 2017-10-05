@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Notes]
 (
-	[Id]			INT Identity(1, 1) NOT NULL PRIMARY KEY,
+	[Id]			INT Identity(1, 1) NOT NULL PRIMARY KEY NONCLUSTERED,
 	Name			NVarchar(25) NOT NULL,
 	Email			NVarchar(100) NULL,
 	Title			NVarchar(50) NOT NULL,
